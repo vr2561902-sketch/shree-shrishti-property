@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Property Details | Shree Shrishti Property
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="style.css">
+
+</head>
+
+<body>
+
+
+<header class="header">
+
+    <div class="logo">
+        SHREE SHRISHTI
+        <span>PROPERTY</span>
+    </div>
+
+    <nav>
+
+        <a href="index.html#home">
+            Home
+        </a>
+
+        <a href="index.html#properties">
+            Properties
+        </a>
+
+        <a href="index.html#services">
+            Services
+        </a>
+
+        <a href="index.html#areas">
+            Areas
+        </a>
+
+        <a href="index.html#about">
+            About
+        </a>
+
+        <a href="index.html#contact">
+            Contact
+        </a>
+
+    </nav>
+
+    <a
+        href="tel:8269893396"
+        class="phone-btn">
+
+        ☎ 8269893396
+
+    </a>
+
+</header>
+
+
+
+<section class="property-details-page">
+
+
+    <div class="details-image">
+
+        <img
+            src="property.png"
+            alt="Property">
+
+    </div>
+
+
+
+    <div class="details-content">
+
+        <div class="gold-heading">
+            PROPERTY DETAILS
+        </div>
+
+
+        <h1 id="propertyTitle">
+            House / Villa
+        </h1>
+
+
+        <p class="location">
+            📍 Indore
+        </p>
+
+
+        <div class="details-box">
+
+            <p>
+                <strong>Property Type:</strong>
+                <span id="propertyType">
+                    House / Villa
+                </span>
+            </p>
+
+            <p>
+                <strong>Location:</strong>
+                Indore
+            </p>
+
+            <p>
+                <strong>Availability:</strong>
+                Available
+            </p>
+
+            <p>
+                <strong>Price:</strong>
+                Contact for Price
+            </p>
+
+        </div>
+
+
+        <p class="details-description">
+
+            Find your ideal property with
+            Shree Shrishti Property.
+
+            For complete property information,
+            pricing and availability,
+            contact us directly.
+
+        </p>
+
+
+
+        <div class="choice-box">
+
+            <h2>
+                What are you looking for?
+            </h2>
+
+            <p>
+                Choose one option to continue.
+            </p>
+
+
+            <div class="choice-buttons">
+
+                <a
+                    href="buy-property.html"
+                    class="buy-choice">
+
+                    🏠 I WANT TO BUY PROPERTY
+
+                </a>
+
+
+                <a
+                    href="sell-property.html"
+                    class="sell-choice">
+
+                    🏡 I WANT TO SELL PROPERTY
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="details-buttons">
+
+            <a
+                href="tel:8269893396"
+                class="gold-btn">
+
+                ☎ Call Now
+
+            </a>
+
+
+            <a
+                href="https://wa.me/918269893396"
+                target="_blank"
+                class="whatsapp-btn">
+
+                WhatsApp
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<footer>
+
+    <div class="footer-content">
+
+        <div>
+
+            <h3>
+                SHREE SHRISHTI PROPERTY
+            </h3>
+
+            <p>
+                Trusted Property Solutions in Indore.
+            </p>
+
+        </div>
+
+        <div>
+
+            <h4>
+                QUICK LINKS
+            </h4>
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="index.html#properties">
+                Properties
+            </a>
+
+            <a href="index.html#contact">
+                Contact
+            </a>
+
+        </div>
+
+        <div>
+
+            <h4>
+                CONTACT
+            </h4>
+
+            <p>
+                📞 8269893396
+            </p>
+
+            <p>
+                📍 Indore
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        © 2026 Shree Shrishti Property.
+        All Rights Reserved.
+
+    </div>
+
+</footer>
+
+
+
+<script>
+
+const params =
+    new URLSearchParams(
+        window.location.search
+    );
+
+const type =
+    params.get("type");
+
+const title =
+    document.getElementById(
+        "propertyTitle"
+    );
+
+const propertyType =
+    document.getElementById(
+        "propertyType"
+    );
+
+
+if (type === "house") {
+
+    title.textContent =
+        "House / Villa";
+
+    propertyType.textContent =
+        "House / Villa";
+
+}
+
+
+else if (type === "plots") {
+
+    title.textContent =
+        "Residential Plots";
+
+    propertyType.textContent =
+        "Residential Plot";
+
+}
+
+
+else if (type === "flats") {
+
+    title.textContent =
+        "Flats";
+
+    propertyType.textContent =
+        "Flats / Apartments";
+
+}
+
+
+else if (type === "commercial") {
+
+    title.textContent =
+        "Commercial Property";
+
+    propertyType.textContent =
+        "Shop / Office / Showroom";
+
+}
+
+
+else if (type === "land") {
+
+    title.textContent =
+        "Jameen / Land";
+
+    propertyType.textContent =
+        "Residential / Agricultural Land";
+
+}
+
+
+else if (type === "rent") {
+
+    title.textContent =
+        "Rent / Independent House";
+
+    propertyType.textContent =
+        "Independent House / Villa / Shop / Office / Showroom";
+
+}
+
+</script>
+
+
+</body>
+
+</html>
